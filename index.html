@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ARITI — Why I love you</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <div class="hero-inner">
+          <img src="heart.svg" alt="heart" class="logo" />
+          <h1>ARITI</h1>
+          <p class="subtitle">A little collection of reasons why I love you ❤️</p>
+        </div>
+      </header>
+
+      <section class="reasons-section">
+        <div class="container">
+          <h2>Reasons I love you</h2>
+          <div id="reasons" class="reasons-grid" aria-live="polite"></div>
+
+          <form id="addReasonForm" class="add-form" aria-label="Add a reason">
+            <input id="reasonInput" type="text" placeholder="Add a new reason (e.g. Your smile)" required maxlength="120" />
+            <button type="submit">Add</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="question-section">
+        <div class="container question-inner">
+          <h2>Quick question</h2>
+          <p class="question">Am I always right?</p>
+          <div class="question-buttons">
+            <button class="q-btn">yes</button>
+            <button class="q-btn">yes</button>
+          </div>
+          <div id="hearts" class="hearts-container" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="sudoku-section">
+        <div class="container">
+          <h2>Mini Sudoku (4x4)</h2>
+          <p class="muted">Fill the grid so each row and column has numbers 1–4. It's an easy puzzle — if you win, you owe me a funny picture! 😉</p>
+          <div id="sudoku" class="sudoku-grid" role="application" aria-label="mini sudoku 4 by 4"></div>
+          <div class="sudoku-controls">
+            <button id="checkSudoku">Check</button>
+            <button id="resetSudoku">Reset</button>
+          </div>
+          <div id="sudokuMessage" class="sudoku-message" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <footer class="foot">
+        Made with love ❤️ — Add as many reasons as you like.
+      </footer>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
